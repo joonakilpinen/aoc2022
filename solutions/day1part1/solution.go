@@ -8,7 +8,7 @@ import (
 
 type Solver struct{}
 
-func calories(elf string) int {
+func Calories(elf string) int {
 	splitElf := strings.Split(elf, "\n")
 	totalCalories := 0
 	for _, str := range splitElf {
@@ -27,7 +27,7 @@ func (Solver) Solve(input string) string {
 	highestCalories := 0
 	elves := strings.Split(input, "\n\n")
 	for _, elf := range elves {
-		elvesCalories := calories(elf)
+		elvesCalories := Calories(elf)
 		if elvesCalories > highestCalories {
 			highestCalories = elvesCalories
 		}

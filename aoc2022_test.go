@@ -28,7 +28,7 @@ func TestDay1Part1Solve(t *testing.T) {
 }
 
 func TestDay1Part2SolveTest(t *testing.T) {
-	Assert(t, &day1part2.Solver{}, GetTestInput(1), "")
+	Assert(t, &day1part2.Solver{}, GetTestInput(1), "45000")
 }
 
 func TestDay1Part2Solve(t *testing.T) {
