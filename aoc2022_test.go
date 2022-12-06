@@ -12,6 +12,8 @@ import (
 	"aoc2022/solutions/day4part2"
 	"aoc2022/solutions/day5part1"
 	"aoc2022/solutions/day5part2"
+	"aoc2022/solutions/day6part1"
+	"aoc2022/solutions/day6part2"
 	"github.com/stretchr/testify/assert"
 	"log"
 	"testing"
@@ -105,4 +107,20 @@ func TestDay5Part2SolveTest(t *testing.T) {
 
 func TestDay5Part2Solve(t *testing.T) {
 	Solve(&day5part2.Solver{}, GetInput(5))
+}
+
+func TestDay6Part1SolveTest(t *testing.T) {
+	Assert(t, &day6part1.Solver{}, GetTestInput(6), "7")
+}
+
+func TestDay6Part1Solve(t *testing.T) {
+	Solve(&day6part1.Solver{}, GetInput(6))
+}
+
+func TestDay6Part2SolveTest(t *testing.T) {
+	Assert(t, &day6part2.Solver{}, GetTestInput(6), "19")
+}
+
+func TestDay6Part2Solve(t *testing.T) {
+	Solve(&day6part2.Solver{}, GetInput(6))
 }
