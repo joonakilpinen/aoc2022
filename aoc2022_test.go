@@ -2,6 +2,8 @@ package main
 
 import (
 	"aoc2022/solutions"
+	"aoc2022/solutions/day10part1"
+	"aoc2022/solutions/day10part2"
 	"aoc2022/solutions/day1part1"
 	"aoc2022/solutions/day1part2"
 	"aoc2022/solutions/day2part1"
@@ -177,4 +179,20 @@ func TestDay9Part2SolveTest(t *testing.T) {
 
 func TestDay9Part2Solve(t *testing.T) {
 	Solve(&day9part2.Solver{}, GetInput(9))
+}
+
+func TestDay10Part1SolveTest(t *testing.T) {
+	Assert(t, &day10part1.Solver{}, GetTestInput(10), "13140")
+}
+
+func TestDay10Part1Solve(t *testing.T) {
+	Solve(&day10part1.Solver{}, GetInput(10))
+}
+
+func TestDay10Part2SolveTest(t *testing.T) {
+	Assert(t, &day10part2.Solver{}, GetTestInput(10), "##..##..##..##..##..##..##..##..##..##..\n###...###...###...###...###...###...###.\n####....####....####....####....####....\n#####.....#####.....#####.....#####.....\n######......######......######......####\n#######.......#######.......#######.....")
+}
+
+func TestDay10Part2Solve(t *testing.T) {
+	Solve(&day10part2.Solver{}, GetInput(10))
 }
