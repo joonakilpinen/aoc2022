@@ -6,6 +6,8 @@ import (
 	"aoc2022/solutions/day10part2"
 	"aoc2022/solutions/day11part1"
 	"aoc2022/solutions/day11part2"
+	"aoc2022/solutions/day12part1"
+	"aoc2022/solutions/day12part2"
 	"aoc2022/solutions/day1part1"
 	"aoc2022/solutions/day1part2"
 	"aoc2022/solutions/day2part1"
@@ -213,4 +215,20 @@ func TestDay11Part2SolveTest(t *testing.T) {
 
 func TestDay11Part2Solve(t *testing.T) {
 	Solve(&day11part2.Solver{}, GetInput(11))
+}
+
+func TestDay12Part1SolveTest(t *testing.T) {
+	Assert(t, &day12part1.Solver{}, GetTestInput(12), "31")
+}
+
+func TestDay12Part1Solve(t *testing.T) {
+	Solve(&day12part1.Solver{}, GetInput(12))
+}
+
+func TestDay12Part2SolveTest(t *testing.T) {
+	Assert(t, &day12part2.Solver{}, GetTestInput(12), "29")
+}
+
+func TestDay12Part2Solve(t *testing.T) {
+	Solve(&day12part2.Solver{}, GetInput(12))
 }
